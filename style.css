@@ -1,0 +1,450 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*fonts*/
+  --ff-heading: 'Mulish', sans-serif;
+  --ff-texting: 'Mulish', sans-serif;
+
+  /*color pallet*/
+  --bg-primary: #F9F4FB;
+  --bg-secondary: linear-gradient(134deg, #343193 0%, #302C63 100%);
+  --bg-gradient-hover: linear-gradient(134deg, #514dd9 0%, #4d479d 100%);
+  --fc-heading: #B52184;
+  --fc-texting: #312D64;
+
+  /*responsiviness*/
+  font-size: 62.5%; /*font size 10px*/
+  --fs-heading: 3.2rem;
+  --fs-heading-boxes: 2.92rem;
+  --fs-texting-subtitle: 2rem;
+  --fs-texting-body: 1.6rem;
+  --width: clamp(43rem, 100%, 143.9rem);
+  --fs-heading-desktop: 3.5rem;
+  --fs-texting-desktop: 1.9rem;
+
+}
+
+body {
+  width: var(--width);
+  height: 256.4rem;
+
+  background-color: var(--bg-primary);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 0;  
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 0; 
+
+  width: var(--width);
+}
+
+header {
+  width: var(--width);
+  height: 67.9rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header #imgtop {
+  animation: topdown 700ms;
+
+}
+
+header .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  animation: topdown 700ms;
+}
+
+header .title h1 {
+  font-family: var(--ff-heading);
+  font-size: var(--fs-heading);
+  color: var(--fc-heading);
+  font-weight: 900;
+  text-align: center;
+  line-height: 4rem;
+
+  margin-top: 1.7rem;
+
+  border-top: none;
+
+  animation: topdown 700ms;
+}
+
+header .title p {
+  color: var(--fc-texting);
+  font-family: var(--ff-texting);
+  font-size: var(--fs-texting-subtitle);
+  text-align: center;
+  font-weight: 600;
+  line-height: 2.5rem;
+
+  margin-top: 0.5rem;
+  margin-bottom: 3.5rem;
+
+  animation: topdown 700ms;
+}
+
+header .title #imgarrow {
+  margin-bottom: 9.3rem;
+
+  animation: topdown 700ms;
+}
+
+main {
+  background: var(--bg-secondary);
+  width: var(--width);
+  height: 132rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+main .box {
+  padding: 2.65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 2rem auto;
+
+  border-radius: 19.9px;
+  background-color: var(--bg-primary);
+
+  width: 35.2rem;
+  height: 38rem;
+  align-self: stretch;
+}
+
+main .box img{
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 2rem;
+}
+
+main .box .texting h2 {
+  color: var(--fc-heading);
+  font-family: var(--ff-heading);
+  font-size: var(--fs-heading-boxes);
+  font-weight: 900;
+  line-height: 3.7rem;
+}
+
+main .box .texting p {
+  color: var(--fc-texting);
+  font-family: var(--ff-texting);
+  font-size: var(--fs-texting-body);
+  font-weight: 600;
+  line-height: 2rem;
+
+  width: 26.5rem;
+  height: 13.1rem;
+
+  margin-top: 2rem;
+  margin-bottom: 2.65rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+
+  margin: 7.8rem 4.1rem 6.5rem;
+  width: var(--width);
+  height: 42.2rem;
+
+  padding: 0;
+}
+
+form fieldset {
+  border: none;
+  width: 35rem;
+}
+
+form fieldset legend {
+  color: var(--fc-heading);
+  font-family: var(--ff-heading);
+  font-size: var(--fs-heading);
+  font-weight: 900;
+  line-height: 4rem;
+
+  margin-bottom: 4.3rem;
+}
+
+form fieldset .input-wrapper {
+  position: relative;
+}
+
+form fieldset .input-wrapper img {
+  position: absolute;
+  top: 1.2rem;
+  left: 1.4rem;
+}
+
+form fieldset .input-wrapper input{
+  height: 4.8rem;
+  width: 34.8rem;
+  padding: 12px 16px 12px 50px;
+  margin-bottom: 2.4rem;
+
+  display: flex;
+  align-items: center;
+
+  border-radius: 16px;
+  border: 1.5px solid var(--fc-texting);
+
+  font-family: var(--ff-texting);
+  color: var(--fc-texting);
+  font-size: var(--fs-texting-body);
+}
+
+form fieldset .input-wrapper input:hover {
+  border: 3px solid var(--fc-texting);
+}
+
+form fieldset #textarea{
+  min-height: 12.6rem;
+  width: 34.8rem;
+  padding: 12px 16px 12px 14px;
+  margin-bottom: 2.4rem;
+
+  border-radius: 16px;
+  border: 1.5px solid #312D64;
+
+  font-family: var(--ff-texting);
+  color: var(--fc-texting);
+  font-size: var(--fs-texting-body);
+}
+
+form fieldset #textarea:hover {
+  border: 3px solid var(--fc-texting);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--fc-texting);
+  font-family: var(--ff-texting);
+  font-size: var(--fs-texting-body);
+  font-weight: 600;
+  line-height: 100%;
+
+  opacity: 0.6;
+}
+
+form fieldset button {
+  display: inline-flex;
+  height: 4.5rem;
+  padding: 1.6rem;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 16px;
+  background: var(--bg-secondary);
+
+  color: white;
+  text-align: center;
+  font-family: var(--ff-texting);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  text-transform: capitalize;
+}
+
+form fieldset button:hover {
+  background: var(--bg-gradient-hover);
+  text-transform: capitalize;
+}
+
+form #stars {
+  opacity: 0;
+}
+
+footer {
+  width: var(--width);
+  height: 8.7rem;
+  padding: 1.6rem;
+  margin: 6.5rem 0 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--bg-secondary);
+
+  inline-size: 100%;
+}
+
+footer a {
+  font-family: var(--ff-texting);
+  color: #FFF;
+  text-align: center;
+  text-decoration: none;
+  align-self: stretch;
+
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+/*------------animation-------------*/
+
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*-----------media queries----------*/
+
+@media (min-width: 1440px) {
+  body {
+    width: 100vw ;
+    height: 205rem;
+  }
+
+  .page {
+    width: 144rem;
+  }
+
+  header{
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 83.6rem;
+    gap: 2.8rem;
+    margin-top: 0;
+  }
+
+  header .title {
+    height: 38.8rem;
+    width: 55.4rem;
+
+    align-items: flex-start;
+
+    margin-top: 31.2rem;
+    margin-left: 10.9rem;
+  }
+
+  header .title h1 {
+    font-size: 58.287px;
+    font-weight: 900;
+    line-height: 7.3rem;
+  }
+
+  header .title p {
+    font-size: 3.3rem;
+    font-weight: 600;
+    line-height: 4rem;
+    margin-bottom: 17.9rem;
+  }
+
+  header .title #imgarrow {
+    margin-bottom: 13.6rem;
+  }
+
+  header #imgtop {
+    width: 72rem;
+    height: 73.2rem;
+
+    margin-bottom: 10.5rem;
+  }
+
+  main {
+    flex-direction: row;
+    gap: 6rem;
+    width: 100vw;
+    height: 57.6rem;
+
+    padding: 6.4rem 11.1rem;
+  }
+
+  main .box {
+    height: 43rem;
+    padding: 3.2rem;
+    gap: 4rem;
+    width: fit-content;
+  }
+
+  main .box h2 {
+    font-size: var(--fs-heading-desktop);
+    line-height: 4.4rem;
+  }
+
+  main .box p {
+    font-size: var(--fs-texting-desktop);
+    line-height: 2.4rem;
+  }
+
+  form {
+    width: 100vw;
+    height: 40rem;
+    flex-direction: row;
+  }
+
+  form fieldset {
+    width: clamp(90rem, 50vw, 170rem);
+    height: 42.2rem;
+    margin: 9.5rem 9.2rem 9.5rem 10.9rem;
+  }
+
+  form fieldset .input-wrapper input{
+    width: 59.2rem;
+  }
+
+  form fieldset #textarea {
+    width: 59.2rem;
+  }
+
+  form #stars {
+    opacity: 1;
+    width: clamp(90rem, 50vw, 170rem);
+    height: 55.5rem;
+    background-image: url("img/imgstars.svg");
+    background-color: var(--bg-primary);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+
+  footer {
+    margin-top: 0;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 1698px) {
+  form fieldset {
+    position: relative;
+  }
+
+  form fieldset button {
+    position: absolute;
+    left: 0rem;
+    bottom: -2.6rem;
+  }
+}
